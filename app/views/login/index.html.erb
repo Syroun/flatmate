@@ -1,0 +1,13 @@
+<div id="login-container" class="centered-container">
+
+	<% @users.each do |user| %>
+	  <%= user.name %>
+	<% end %>
+
+	<%= form_tag do %>
+		<%= password_field_tag %>
+		<br />
+		<%= submit_tag 'Log In', :class => 'login-button' %>
+	<% end %>
+
+</div>
