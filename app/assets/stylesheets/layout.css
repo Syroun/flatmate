@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header-toolbar {
+	height: 25px;
+	background-color: blue;
+}
+
+.centered-container {
+	/*display: inline-block;*/
+	text-align: center;
+	border: 1px solid black;
+	padding: 10px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
