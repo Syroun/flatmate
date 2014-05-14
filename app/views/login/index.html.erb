@@ -1,18 +1,23 @@
 <div id="login-container" class="centered-container">
+	
 
-	<img id="profile-img" class="profile-img" src="//lh4.googleusercontent.com/-pH0i0T-brcM/AAAAAAAAAAI/AAAAAAAAAAA/Ty-k60Xx1Bo/photo.jpg?sz=120" alt="">
-
-	<div id="name" class="name">
-		<% @users.each do |user| %>
-	  	 <%= user.name %>
-		<% end %>
+	<div id="pictures" class="pictures">
+		<div id="picture">
+		<%= image_tag 'Carsten.JPG' %>
+		</div>
+		<div id="picture">
+		<%= image_tag 'silke.jpg' %>
+		</div>
+		<div id="picture">
+		<%= image_tag 'peter.png' %>
+		</div>
 	</div>
 
-
+<div id="login">
 	<%= form_tag do %>
 		<%= password_field_tag 'password', '', :placeholder => 'Passwort'%>
 		<br />
-		<%= submit_tag 'Log In', :class => 'login-button'%>
+		<%= submit_tag 'Anmelden', :class => 'login-button'%>
 	<% end %>
-
+</div>
 </div>
